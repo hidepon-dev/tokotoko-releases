@@ -1,15 +1,14 @@
 <div align="center">
 
-  <img src="ui/tokotoko-badge.svg" alt="TokoToko Logo" width="220">
+　<img width="300" height="102" alt="Image" src="https://github.com/user-attachments/assets/e3a9ceb9-eac1-4c8a-8bf5-73759c8e4001" />
 
   # TokoToko (トコトコ)
 
   **デスクトップでちょこちょこ動く、Gemini連携デスクトップマスコット**
 
-  [![Release](https://img.shields.io/github/v/release/<GitHubユーザー名>/tokotoko?style=flat-square)](https://github.com/<GitHubユーザー名>/tokotoko/releases)
+  [![Release](https://img.shields.io/github/v/release/hidepon-devtokotoko-releases?style=flat-square)](#)
   [![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows-blue?style=flat-square)](#)
-  [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](#)
-
+  [![Status](https://img.shields.io/badge/status-Closed%20Beta-orange?style=flat-square)](#)
 </div>
 
 ---
@@ -26,42 +25,9 @@
 
 ---
 
-## ダウンロード (Download)
+## 利用条件・著作権について (Terms of Use)
 
-最新版のインストーラーおよび実行ファイルは [Releases ページ](https://github.com/<GitHubユーザー名>/tokotoko/releases) からダウンロードしてください。
-
-| OS | 配布フォーマット | 備考 |
-| :--- | :--- | :--- |
-| **macOS** | `.dmg` / `TokoToko.app` | 初回起動時に Gatekeeper の警告が出る場合は「右クリック ➔ 開く」を実行してください |
-| **Windows** | `.msi` / `.exe` | SmartScreen が表示された場合は「詳細情報 ➔ 実行」を選択してください |
-
----
-
-## クイックスタート (Quick Start)
-
-### 1. アプリの起動
-ダウンロードしたインストーラーを実行するか、アプリケーションフォルダに配置して起動します。  
-画面右下にマスコットが表示され、待機モーションを開始します。
-
-### 2. ブラウザ / Gemini 連携 (設定)
-1. タスクトレイ（またはアプリ設定）から **Settings** を開きます。
-2. 連携用のローカルポート（デフォルト設定）を確認します。
-3. Chrome 拡張機能をブラウザに導入し、Gemini 画面を開くことで自動的にマスコットへ状態が送信されます。
-
----
-
-## 開発者向けガイド (For Developers)
-
-### 前提条件
-- [Rust](https://www.rust-lang.org/) (最新の stable)
-- Node.js (v18+) または関連ツールチェーン
-- OS ごとのビルド依存関係 ([Tauri 公式前提条件](https://tauri.app/v1/guides/getting-started/prerequisites) を参照)
-
-### セットアップ & 開発実行
-```bash
-# リポジトリのクローン
-git clone [https://github.com/](https://github.com/)<GitHubユーザー名>/tokotoko.git
-cd tokotoko
-
-# 開発サーバー起動
-cargo tauri dev
+- **著作権:** 本ソフトウェアおよび関連する画像・デザイン等の著作権は制作者（hidepon-dev）に帰属します。
+- **無断転載・再配布の禁止:** 本バイナリおよび同梱ファイルの無断転載、再配布、リバースエンジニアリングはご遠慮ください。
+- **お試し版（ベータ）提供:** 本バージョンは動作テストおよび評価を目的としたテストビルドです。予告なく仕様変更や公開停止を行う場合があります。
+- **免責事項:** 本ソフトウェアの利用により生じたいかなる損害についても、制作者は一切の責任を負いかねます。あらかじめご了承の上でご利用ください。
