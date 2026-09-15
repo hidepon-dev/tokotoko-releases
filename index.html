@@ -122,6 +122,69 @@
     strong {
       color: #fff;
     }
+/* ボタンの配置ラッパー（中央寄せにする場合） */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0 32px;
+}
+
+/* ボタン本体 */
+.btn-release {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 22px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #f1f5f9;
+  text-decoration: none;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.9));
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 9999px; /* ピル型（角丸） */
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* アイコン */
+.btn-release .btn-icon {
+  stroke: #38bdf8; /* アクセントのシアン色 */
+  transition: transform 0.25s ease;
+}
+
+/* バージョンバッジ */
+.btn-release .btn-badge {
+  font-size: 0.75rem;
+  padding: 2px 7px;
+  border-radius: 9999px;
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  font-weight: 500;
+}
+
+/* ホバー時の演出（少し浮いて柔らかく発光） */
+.btn-release:hover {
+  transform: translateY(-2px);
+  border-color: rgba(56, 189, 248, 0.5);
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.25);
+  color: #ffffff;
+}
+
+.btn-release:hover .btn-icon {
+  transform: translateY(2px); /* ダウンロード矢印がちょこんと下がる */
+}
+
+/* クリック時 */
+.btn-release:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+    
   </style>
 </head>
 <body>
