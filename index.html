@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TokoToko (トコトコ)</title>
+  <style>
+    /* 全体設定 */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0b0c10;
+      color: #c5c6c7;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 24px 20px 60px;
+    }
+
+    /* --- CRTモニター風ヒーローコンテナ --- */
+    .tokotoko-hero {
+      position: relative;
+      width: 100%;
+      height: 380px;
+      overflow: hidden;
+      border-radius: 12px;
+      background: #0d0838;
+      display: flex;
+      align-items: flex-end;
+      padding: 32px;
+      box-sizing: border-box;
+      box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.8), 0 8px 24px rgba(0,0,0,0.3);
+      margin-bottom: 30px;
+    }
+
+    /* 背景動画（Toko） */
+    .hero-bg-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: 1;
+      image-rendering: pixelated;
+      filter: contrast(1.15) brightness(1.05);
+    }
+
+    /* ブラウン管の走査線 + ドットグリッド */
+    .crt-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+      background: 
+        linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.45) 50%),
+        linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+      background-size: 100% 4px, 6px 100%;
+    }
+
+    /* 右上のロゴ */
+    .hero-logo-right {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 3;
+    }
+    .hero-logo-right img {
+      filter: drop-shadow(0 2px 6px rgba(0,0,0,0.6));
+      display: block;
+    }
+
+    /* 前面テキストエリア */
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      color: #ffffff;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    }
+    .hero-title {
+      margin: 0 0 6px 0;
+      font-size: 2.2rem;
+      font-weight: 800;
+    }
+    .hero-title span {
+      font-size: 1.2rem;
+      font-weight: 500;
+      opacity: 0.85;
+    }
+    .hero-desc {
+      margin: 0 0 14px 0;
+      font-size: 1rem;
+    }
+    .hero-badges img {
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
+    /* 本文スタイル */
+    h2 {
+      border-bottom: 1px solid #333;
+      padding-bottom: 8px;
+      margin-top: 36px;
+      color: #fff;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid #222;
+      margin: 30px 0;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    strong {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- CRTヒーローエリア -->
+    <div class="tokotoko-hero">
+      <div class="crt-overlay"></div>
+      
+      <!-- アップロードしたmp4のファイル名に合わせて指定 -->
+      <video class="hero-bg-video" autoplay loop muted playsinline>
+        <source src="Toko_demo.mp4" type="video/mp4">
+      </video>
+
+      <!-- 右上のロゴ -->
+      <div class="hero-logo-right">
+        <img width="220" alt="TokoToko Logo" src="https://github.com/user-attachments/assets/e3a9ceb9-eac1-4c8a-8bf5-73759c8e4001">
+      </div>
+
+      <!-- タイトルとバッジ -->
+      <div class="hero-content">
+        <h1 class="hero-title">TokoToko <span>(トコトコ)</span></h1>
+        <p class="hero-desc">デスクトップでちょこちょこ動く、Gemini連携デスクトップマスコット</p>
+        <div class="hero-badges">
+          <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows-blue?style=flat-square" alt="Platform">
+          <img src="https://img.shields.io/badge/status-Closed%20Beta-orange?style=flat-square" alt="Status">
+        </div>
+      </div>
+    </div>
+
+    <!-- 概要セクション -->
+    <h2>概要 (Overview)</h2>
+    <p>
+      <strong>TokoToko</strong> は、Tauri (Rust + Web) で構築された軽量なデスクトップマスコットアプリです。<br>
+      ブラウザでの作業や Gemini との対話に合わせて、画面の隅でキャラクターが愛らしくアニメーション（歩く・待機・リアクション）します。
+    </p>
+    <ul>
+      <li><strong>省リソース & 軽量:</strong> Rust 製バックエンド（Tauri）による高速・低負荷な動作。</li>
+      <li><strong>クロスプラットフォーム:</strong> macOS (Apple Silicon / Intel) および Windows に両対応。</li>
+      <li><strong>ブラウザ連携:</strong> 専用 Chrome 拡張機能やローカル通信を介して、Gemini の状態に応じたリアクションを実現。</li>
+      <li><strong>スプライトシート差し替え:</strong> お好みのキャラクター画像（スプライトシート）に入れ替えて楽しむことが可能。</li>
+    </ul>
+
+    <hr>
+
+    <!-- 利用条件セクション -->
+    <h2>利用条件・著作権について (Terms of Use)</h2>
+    <ul>
+      <li><strong>著作権:</strong> 本ソフトウェアおよび関連する画像・デザイン等の著作権は制作者（hidepon-dev）に帰属します。</li>
+      <li><strong>無断転載・再配布の禁止:</strong> 本バイナリおよび同梱ファイルの無断転載、再配布、リバースエンジニアリングはご遠慮ください。</li>
+      <li><strong>お試し版（ベータ）提供:</strong> 本バージョンは動作テストおよび評価を目的としたテストビルドです。予告なく仕様変更や公開停止を行う場合があります。</li>
+      <li><strong>免責事項:</strong> 本ソフトウェアの利用により生じたいかなる損害についても、制作者は一切の責任を負いかねます。あらかじめご了承の上でご利用ください。</li>
+    </ul>
+  </div>
+
+</body>
+</html>
