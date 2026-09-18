@@ -3,7 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TokoToko (トコトコ)</title>
+  
+  <!-- 基本SEOメタタグ -->
+  <title>TokoToko (トコトコ) | デスクトップをとことこ歩き回る軽量デスクトップマスコット</title>
+  <meta name="description" content="TokoToko (トコトコ) は、デスクトップをとことこ歩き回る軽量デスクトップマスコットアプリです。Tauri (Rust + Web) 製で軽快に動作し、Gemini連携リアクションにも対応。macOS・Windows両対応。">
+  <link rel="canonical" href="https://hidepon-dev.github.io/tokotoko-releases/">
+
+  <!-- OGP (Open Graph Protocol) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TokoToko (トコトコ) | デスクトップをとことこ歩き回る軽量デスクトップマスコット">
+  <meta property="og:description" content="デスクトップをとことこ歩き回る、Tauri製の軽量マスコットアプリ。気ままに画面を歩き回ったり、Geminiと連動してリアクションします。">
+  <meta property="og:url" content="https://hidepon-dev.github.io/tokotoko-releases/">
+  <meta property="og:site_name" content="TokoToko">
+  <meta property="og:image" content="https://github.com/user-attachments/assets/e3a9ceb9-eac1-4c8a-8bf5-73759c8e4001">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TokoToko (トコトコ) | デスクトップをとことこ歩き回る軽量デスクトップマスコット">
+  <meta name="twitter:description" content="デスクトップをとことこ歩き回る、Tauri製の軽量マスコットアプリ。">
+  <meta name="twitter:image" content="https://github.com/user-attachments/assets/e3a9ceb9-eac1-4c8a-8bf5-73759c8e4001">
+
   <style>
     /* 全体設定 */
     body {
@@ -101,12 +120,97 @@
       vertical-align: middle;
     }
 
-    /* 本文スタイル */
-    h2 {
+    /* ボタンの配置ラッパー */
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 24px 0 32px;
+    }
+
+    /* ボタン本体 */
+    .btn-release {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 22px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #f1f5f9;
+      text-decoration: none;
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.9));
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      border-radius: 9999px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(8px);
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .btn-release .btn-icon {
+      stroke: #38bdf8;
+      transition: transform 0.25s ease;
+    }
+
+    .btn-release .btn-badge {
+      font-size: 0.75rem;
+      padding: 2px 7px;
+      border-radius: 9999px;
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      font-weight: 500;
+    }
+
+    .btn-release:hover {
+      transform: translateY(-2px);
+      border-color: rgba(56, 189, 248, 0.5);
+      box-shadow: 0 6px 20px rgba(56, 189, 248, 0.25);
+      color: #ffffff;
+    }
+
+    .btn-release:hover .btn-icon {
+      transform: translateY(2px);
+    }
+
+    .btn-release:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    /* 本文・Markdownスタイル */
+    #readme-content h1, #readme-content h2, h2 {
       border-bottom: 1px solid #333;
       padding-bottom: 8px;
       margin-top: 36px;
       color: #fff;
+    }
+    #readme-content h3 {
+      color: #fff;
+      margin-top: 24px;
+    }
+    #readme-content a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+    #readme-content a:hover {
+      text-decoration: underline;
+    }
+    #readme-content pre, #readme-content code {
+      background-color: #1a1c23;
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace;
+    }
+    #readme-content pre {
+      padding: 16px;
+      overflow: auto;
+    }
+    #readme-content code {
+      padding: 2px 6px;
+    }
+    #readme-content pre code {
+      padding: 0;
+      background: transparent;
     }
     hr {
       border: 0;
@@ -122,69 +226,6 @@
     strong {
       color: #fff;
     }
-/* ボタンの配置ラッパー（中央寄せにする場合） */
-.btn-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 24px 0 32px;
-}
-
-/* ボタン本体 */
-.btn-release {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 22px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  color: #f1f5f9;
-  text-decoration: none;
-  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.9));
-  border: 1px solid rgba(148, 163, 184, 0.2);
-  border-radius: 9999px; /* ピル型（角丸） */
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(8px);
-  cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* アイコン */
-.btn-release .btn-icon {
-  stroke: #38bdf8; /* アクセントのシアン色 */
-  transition: transform 0.25s ease;
-}
-
-/* バージョンバッジ */
-.btn-release .btn-badge {
-  font-size: 0.75rem;
-  padding: 2px 7px;
-  border-radius: 9999px;
-  background: rgba(56, 189, 248, 0.15);
-  color: #38bdf8;
-  border: 1px solid rgba(56, 189, 248, 0.3);
-  font-weight: 500;
-}
-
-/* ホバー時の演出（少し浮いて柔らかく発光） */
-.btn-release:hover {
-  transform: translateY(-2px);
-  border-color: rgba(56, 189, 248, 0.5);
-  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.25);
-  color: #ffffff;
-}
-
-.btn-release:hover .btn-icon {
-  transform: translateY(2px); /* ダウンロード矢印がちょこんと下がる */
-}
-
-/* クリック時 */
-.btn-release:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-}
-    
   </style>
 </head>
 <body>
@@ -194,7 +235,6 @@
     <div class="tokotoko-hero">
       <div class="crt-overlay"></div>
       
-      <!-- アップロードしたmp4のファイル名に合わせて指定 -->
       <video class="hero-bg-video" autoplay loop muted playsinline>
         <source src="Toko_demo.mp4" type="video/mp4">
       </video>
@@ -207,51 +247,74 @@
       <!-- タイトルとバッジ -->
       <div class="hero-content">
         <h1 class="hero-title">TokoToko <span>(トコトコ)</span></h1>
-        <p class="hero-desc">デスクトップでちょこちょこ動く、Gemini連携デスクトップマスコット</p>
+        <p class="hero-desc">デスクトップをとことこ歩き回る、軽量デスクトップマスコット</p>
         <div class="hero-badges">
           <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows-blue?style=flat-square" alt="Platform">
           <img src="https://img.shields.io/badge/status-Closed%20Beta-orange?style=flat-square" alt="Status">
         </div>
       </div>
     </div>
-<div class="btn-container">
-  <a href="https://github.com/hidepon-dev/tokotoko-releases/releases/latest" 
-     class="btn-release" 
-     target="_blank" 
-     rel="noopener noreferrer">
-    <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-      <polyline points="7 10 12 15 17 10"></polyline>
-      <line x1="12" y1="15" x2="12" y2="3"></line>
-    </svg>
-    <span>Download on Releases</span>
-    <span class="btn-badge">v0.2.0</span>
-  </a>
-</div>
-    <!-- 概要セクション -->
-    <h2>概要 (Overview)</h2>
-    <p>
-      <strong>TokoToko</strong> は、Tauri (Rust + Web) で構築された軽量なデスクトップマスコットアプリです。<br>
-      ブラウザでの作業や Gemini との対話に合わせて、画面の隅でキャラクターが愛らしくアニメーション（歩く・待機・リアクション）します。
-    </p>
-    <ul>
-      <li><strong>省リソース & 軽量:</strong> Rust 製バックエンド（Tauri）による高速・低負荷な動作。</li>
-      <li><strong>クロスプラットフォーム:</strong> macOS (Apple Silicon / Intel) および Windows に両対応。</li>
-      <li><strong>ブラウザ連携:</strong> 専用 Chrome 拡張機能やローカル通信を介して、Gemini の状態に応じたリアクションを実現。</li>
-      <li><strong>スプライトシート差し替え:</strong> お好みのキャラクター画像（スプライトシート）に入れ替えて楽しむことが可能。</li>
-    </ul>
 
-    <hr>
+    <!-- ダウンロードボタン -->
+    <div class="btn-container">
+      <a href="https://github.com/hidepon-dev/tokotoko-releases/releases/latest" 
+         class="btn-release" 
+         target="_blank" 
+         rel="noopener noreferrer">
+        <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        <span>Download on Releases</span>
+        <span class="btn-badge">v0.2.0</span>
+      </a>
+    </div>
 
-    <!-- 利用条件セクション -->
-    <h2>利用条件・著作権について (Terms of Use)</h2>
-    <ul>
-      <li><strong>著作権:</strong> 本ソフトウェアおよび関連する画像・デザイン等の著作権は制作者（hidepon-dev）に帰属します。</li>
-      <li><strong>無断転載・再配布の禁止:</strong> 本バイナリおよび同梱ファイルの無断転載、再配布、リバースエンジニアリングはご遠慮ください。</li>
-      <li><strong>お試し版（ベータ）提供:</strong> 本バージョンは動作テストおよび評価を目的としたテストビルドです。予告なく仕様変更や公開停止を行う場合があります。</li>
-      <li><strong>免責事項:</strong> 本ソフトウェアの利用により生じたいかなる損害についても、制作者は一切の責任を負いかねます。あらかじめご了承の上でご利用ください。</li>
-    </ul>
+    <!-- README反映エリア（初期状態はSEO・フォールバック用の静的HTML） -->
+    <main id="readme-content">
+      <h2>概要 (Overview)</h2>
+      <p>
+        <strong>TokoToko</strong> は、Tauri (Rust + Web) で構築された軽量なデスクトップマスコットアプリです。<br>
+        画面全体を気ままにとことこ歩き回るほか、Geminiとの対話や作業に合わせて愛らしくアニメーション（歩く・待機・リアクション）します。
+      </p>
+      <ul>
+        <li><strong>省リソース & 軽量:</strong> Rust 製バックエンド（Tauri）による高速・低負荷な動作。</li>
+        <li><strong>クロスプラットフォーム:</strong> macOS (Apple Silicon / Intel) および Windows に両対応。</li>
+        <li><strong>ブラウザ・AI連携:</strong> 専用 Chrome 拡張機能やローカル通信を介して、Gemini の状態に応じたリアクションを実現。</li>
+        <li><strong>スプライトシート差し替え:</strong> お好みのキャラクター画像（スプライトシート）に入れ替えて楽しむことが可能。</li>
+      </ul>
+
+      <hr>
+
+      <h2>利用条件・著作権について (Terms of Use)</h2>
+      <ul>
+        <li><strong>著作権:</strong> 本ソフトウェアおよび関連する画像・デザイン等の著作権は制作者（hidepon-dev）に帰属します。</li>
+        <li><strong>無断転載・再配布の禁止:</strong> 本バイナリおよび同梱ファイルの無断転載、再配布、リバースエンジニアリングはご遠慮ください。</li>
+        <li><strong>お試し版（ベータ）提供:</strong> 本バージョンは動作テストおよび評価を目的としたテストビルドです。予告なく仕様変更や公開停止を行う場合があります。</li>
+        <li><strong>免責事項:</strong> 本ソフトウェアの利用により生じたいかなる損害についても、制作者は一切の責任を負いかねます。あらかじめご了承の上でご利用ください。</li>
+      </ul>
+    </main>
   </div>
 
+  <!-- Markdownパーサー（marked）の読み込み & README自動同期スクリプト -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    fetch('./README.md')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('README.md が見つかりませんでした。');
+        }
+        return response.text();
+      })
+      .then(markdown => {
+        // README冒頭の見出し（# TokoToko など）の重複を避けるため除外
+        const filteredMarkdown = markdown.replace(/^#\s+TokoToko[^\n]*\n+/i, '');
+        document.getElementById('readme-content').innerHTML = marked.parse(filteredMarkdown);
+      })
+      .catch(err => {
+        console.warn('README auto-sync note:', err.message);
+      });
+  </script>
 </body>
 </html>
