@@ -263,10 +263,10 @@
           <line x1="12" y1="15" x2="12" y2="3"></line>
         </svg>
         <span>Download on Releases</span>
-        <span class="btn-badge">v0.2.0</span>
+        <span class="btn-badge" id="release-version">latest</span>
       </a>
     </div>
-
+    
     <!-- README反映エリア（初期状態はSEO・フォールバック用の静的HTML） -->
     <main id="readme-content">
       <h2>概要 (Overview)</h2>
@@ -310,6 +310,21 @@
       })
       .catch(err => {
         console.warn('README auto-sync note:', err.message);
+      });
+
+    // --- 最新リリースバージョン番号の自動反映 ---
+    fetch('https://api.github.com/repos/hidepon-dev/tokotoko-releases/releases/latest')
+      .then(response => {
+        if (!response.ok) throw new Error('Release API error');
+        return response.json();
+      })
+      .then(data => {
+        if (data.tag_name) {
+          document.getElementById('release-version').textContent = data.tag_name;
+        }
+      })
+      .catch(() => {
+        // API上限やオフライン時は「latest」表記のまま維持
       });
   </script>
 </body>
