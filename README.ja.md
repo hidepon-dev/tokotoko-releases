@@ -9,6 +9,9 @@
 
 <!-- デモ動画やGIFをここに配置 -->
 <!-- <p align="center"><img src="assets/demo.gif" alt="TokoToko Demo" width="600"></p> -->
+<p align="center">
+  <video src="assets/TokoToko_PV01.mp4" width="680" autoplay loop muted playsinline></video>
+</p>
 
 </div>
 
