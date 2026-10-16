@@ -116,5 +116,6 @@ For detailed licensing conditions, restrictions, and disclaimers, please refer t
 ---
 
 <div align="center">
-  <sub>Developed with ❤️ for developers and creators.</sub>
+  <sub>Designed & Developed with ❤️ by hidepon & Alice</sub><br>
+  <sub>Copyright © 2026 TokoToko Project 🐾. All rights reserved.</sub>
 </div>
