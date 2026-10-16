@@ -1,6 +1,6 @@
 # Privacy Policy for TokoToko Gemini Integration
 
-Last updated: September 30, 2026
+Last updated: October 17, 2026
 
 TokoToko Gemini Integration ("the Extension") is committed to protecting your privacy. This Privacy Policy explains how information is handled when you use the Extension.
 
@@ -15,4 +15,4 @@ TokoToko Gemini Integration ("the Extension") is committed to protecting your pr
 The Extension does not sell, share, or transfer any user data to third parties.
 
 ## 3. Contact
-If you have any questions about this Privacy Policy, please open an issue on our GitHub repository.
+If you have any questions about this Privacy Policy, please open an issue on our [GitHub repository](https://github.com/hidepon-dev/tokotoko-releases/issues).
