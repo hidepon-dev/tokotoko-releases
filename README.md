@@ -50,14 +50,14 @@ Choose the installation method for your operating system:
 ### 🪟 Windows
 * Install directly from the **Microsoft Store**:  
   <!-- [Microsoft Store Badge Link] -->
-* Or download the standalone installer (`.msi` / `.exe`) from [GitHub Releases](https://github.com/hidepon/tokotoko/releases).
+* Or download the standalone installer (`.msi` / `.exe`) from [GitHub Releases](https://github.com/hidepon-dev/tokotoko-releases/releases).
 
 ### 🍏 macOS
 * Available via **Homebrew Cask**:
   ```bash
   brew install --cask tokotoko
   ```
-* Or download the `.dmg` package from [GitHub Releases](https://github.com/hidepon/tokotoko/releases) and drag it to your Applications folder.
+* Or download the `.dmg` package from [GitHub Releases](https://github.com/hidepon-dev/tokotoko-releases/releases) and drag it to your Applications folder.
 
 ---
 
