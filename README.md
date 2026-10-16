@@ -9,6 +9,8 @@ An ultra-lightweight, autonomous desktop mascot that keeps you company and syncs
 
 <!-- Place demo video / GIF here -->
 <!-- <p align="center"><img src="assets/demo.gif" alt="TokoToko Demo" width="600"></p> -->
+https://github.com/user-attachments/assets/ad3d3bed-1db9-4a9a-b4e1-814875adcbbf
+
 
 </div>
 
