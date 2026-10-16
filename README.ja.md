@@ -11,7 +11,7 @@
 <!-- <p align="center"><img src="assets/demo.gif" alt="TokoToko Demo" width="600"></p> -->
 <!-- 前後に必ず空行をあける -->
 
-https://github.com/user-attachments/assets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+https://github.com/user-attachments/assets/ad3d3bed-1db9-4a9a-b4e1-814875adcbbf
 
 <!-- 前後に必ず空行をあける -->
 
