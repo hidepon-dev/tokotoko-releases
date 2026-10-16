@@ -53,14 +53,14 @@ https://github.com/user-attachments/assets/ad3d3bed-1db9-4a9a-b4e1-814875adcbbf
 ### 🪟 Windows
 * **Microsoft Store** よりワンクリックでインストール可能です。  
   <!-- [Microsoft Store バッジリンク] -->
-* または [GitHub Releases](https://github.com/hidepon/tokotoko/releases) からインストーラー（`.msi` / `.exe`）をダウンロードしてください。
+* または [GitHub Releases](https://github.com/hidepon-dev/tokotoko-releases/releases) からインストーラー（`.msi` / `.exe`）をダウンロードしてください。
 
 ### 🍏 macOS
 * **Homebrew Cask** に対応しています：
   ```bash
   brew install --cask tokotoko
   ```
-* または [GitHub Releases](https://github.com/hidepon/tokotoko/releases) から `.dmg` をダウンロードし、アプリケーションフォルダへ配置してください。
+* または [GitHub Releases](https://github.com/hidepon-dev/tokotoko-releases/releases) から `.dmg` をダウンロードし、アプリケーションフォルダへ配置してください。
 
 ---
 
