@@ -119,5 +119,6 @@ TokoToko はローカルソケット（macOS: Unix Domain Socket / Windows: Name
 ---
 
 <div align="center">
-  <sub>Developed with ❤️ for developers and creators.</sub>
+  <sub>Designed & Developed with ❤️ by hidepon & Alice</sub><br>
+  <sub>Copyright © 2026 TokoToko Project 🐾. All rights reserved.</sub>
 </div>
