@@ -85,6 +85,14 @@ Custom sprite sheets can be registered via drag-and-drop:
 
 ---
 
-## 5. Templates & Resources
+## 5. Templates & Samples
 
-Guideline templates (PSD / PNG with 256×256 px grid overlays) are available to help align your artwork. Create your own companion and let them stroll across your desktop🐾
+To assist with frame alignment, grid positioning, and in-app testing for your custom characters, we provide an overlay guide template and a functional sample sheet.
+
+* **[Grid Alignment Template (template_grid.png)](templates/template_grid.png)**  
+  A transparent 256×256 px grid overlay labeled with action names and row numbers. Import this file as a top layer in your preferred painting or pixel-art software to align your keyframes accurately.
+* **[Verification Sample Sheet (toko_prototype.webp)](templates/toko_prototype.webp)**  
+  A sample character sprite sheet for layout reference and motion testing within TokoToko.  
+  *Note: This sample asset is provided strictly for alignment reference and personal testing within the app. Standalone redistribution or unauthorized commercial reproduction of this image is prohibited.*
+
+Create your own unique companion and let them stroll across your desktop🐾
