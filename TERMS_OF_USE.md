@@ -33,6 +33,12 @@ The use of additional characters, sprite assets, extensions, or modules provided
 ### Article 6 (Modifications to Terms)
 The Licensor reserves the right to modify this Agreement at its sole discretion. Any revisions shall become effective immediately upon being posted on the Software's repository, distribution page, or official site.
 
+### Article 7 (Credits & Artwork Licenses)
+1. **Original Characters & Artwork:**  
+   Character designs and sprite assets bundled with or officially distributed for the Software are original designs created and refined by the TokoToko Project (utilizing Google Gemini image generation tools and custom adjustments). Unauthorized standalone redistribution, resale, or repurposing of these graphic assets in other works is prohibited.
+2. **Third-Party Guest Characters (Zundamon):**  
+   Promotional free character packages featuring "Zundamon" are derivative works created in accordance with the Character Usage Guidelines of the Tohoku Zunko / Zundamon Project (SSS LLC). Rights to the character "Zundamon" belong to SSS LLC.
+
 ---
 
 ## 日本語
@@ -63,6 +69,12 @@ The Licensor reserves the right to modify this Agreement at its sole discretion.
 
 ### 第6条（規約の変更）
 甲は、必要に応じて本規約を変更できるものとします。変更後の規約は、本ソフトウェアの配布ページまたは公式サイトに掲載された時点より効力を生じます。
+
+### 第7条（クレジットおよびアセットライセンス）
+1. **オリジナルキャラクター & アートワーク:**  
+   本ソフトウェアに同梱または公式配布されるオリジナルキャラクターデザインおよびスプライトシート等のグラフィックアセットは、TokoToko Project により制作（Google Gemini の画像生成機能の活用および加筆・調整を含む）されたオリジナルデザインです。アセット単体の無断再配布、転売、および他作品への流用はご遠慮ください。
+2. **ゲスト・コラボキャラクター（ずんだもん）:**  
+   プロモーションとして無償配布される「ずんだもん」キャラクターデータは、「東北ずん子・ずんだもんプロジェクト」（合同会社SSS）のキャラクター利用ガイドラインに準拠して制作された二次創作物です。「ずんだもん」のキャラクター著作権は合同会社SSSに帰属します。
 
 ---
 

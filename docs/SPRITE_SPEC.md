@@ -1,5 +1,7 @@
 # Custom Character & Sprite Sheet Specification Guide 🐾
 
+**English** | [日本語 (Japanese)](SPRITE_SPEC.ja.md)
+
 This guide outlines the **sprite sheet specifications** and **registration steps** required to import your own original characters into the desktop mascot "TokoToko".
 
 With a single image file structured according to this specification, TokoToko can render smooth autonomous walking and rich reactive animations directly on your desktop.
@@ -11,13 +13,14 @@ With a single image file structured according to this specification, TokoToko ca
 | Item | Specification | Notes |
 | :--- | :--- | :--- |
 | **File Format** | **PNG** or **WebP** | Must include an alpha channel (transparent background) |
-| **Total Resolution** | **2048 px (W) × 2816 px (H)** | 8 columns × 11 rows |
-| **Frame Size** | **256 px × 256 px** | Square aspect ratio |
+| **Total Resolution (Recommended & Max)** | **2048 px (W) × 2816 px (H)** | Aspect ratio **8:11** (8 columns × 11 rows) — Maximum size limit |
+| **Frame Size** | **256 px × 256 px** | Square aspect ratio (at 2048×2816 px) |
 | **Frame Layout** | **8 frames per row** (11 rows, 88 frames total) | Played sequentially from left to right |
 | **Color Space** | sRGB | Alpha transparency recommended |
 
-> 💡 **Recommended Settings:**  
-> To maintain sharp pixel art or line art while keeping memory consumption low, export as **lossless transparent WebP** or **transparent 32-bit PNG**.
+> 💡 **Resolution Limit & Recommended Format:**  
+> * To maintain sharp pixel art or line art while keeping file size small, export as **lossless transparent WebP** or **transparent 32-bit PNG**.
+> * To restrict memory usage and keep TokoToko ultra-lightweight, **the maximum supported resolution is 2048 px × 2816 px** (the aspect ratio must strictly match **8:11**).
 
 ---
 
@@ -51,7 +54,7 @@ Each row contains **8 frames (Col 0 through Col 7)** that form a single seamless
 | **Row 00** | `idle` | Gentle breathing, blinking | Default standing standby state |
 | **Row 01** | `running-right` | Walking / running toward the right | Autonomous roaming (moving right) |
 | **Row 02** | `running-left` | Walking / running toward the left | Autonomous roaming (moving left) |
-| **Row 03** | `waving` | Smiling, waving hand, peace sign | Random idle action / App startup |
+| **Row 03** | `waving` | Smiling, waving hand, peace sign | Random idle action / IPC trigger |
 | **Row 04** | `jumping` | Joyful jumping with bounce | Left-click / CLI command success (`Exit 0`) |
 | **Row 05** | `failed` | Anxious slump, sigh, drop head | CLI failure (`Exit != 0`) / Build error |
 | **Row 06** | `waiting` | Tucking hair behind ear, shifting pose | Extended idle pause / Awaiting input |
@@ -77,11 +80,14 @@ Each row contains **8 frames (Col 0 through Col 7)** that form a single seamless
 
 Custom sprite sheets can be registered via drag-and-drop:
 
-1. Right-click the active mascot on your desktop and choose **Settings**.
-2. Navigate to the **Character Slots** tab in the sidebar.
-3. Drag and drop your image file (`.png` or `.webp`) into any open slot card (Slots 2 through 5).
-4. Enter a name for your character and save.
-5. Click the **Switch** button on the card to switch your active desktop mascot to your original creation!
+1. Right-click the active mascot on your desktop and choose **`⚙️ System Core...`**.
+2. Open the **Character Slots** tab.
+3. Drag and drop your image file (`.png` or `.webp`) into any custom slot card (**Slot 1 through Slot 4** — Slot 0 is reserved for Toko).
+4. Optionally click the edit icon on the card to set your character's name and save.
+5. Click the **ATTACH** button on the card to switch your active desktop mascot to your original creation!
+
+> 📦 **Want to bundle a character name, role, and status quote for distribution?**  
+> You can also package your sprite sheet with a `manifest.json` file into an Open Character Package (`.toko` / `.zip`). See the **[Character Package (`.toko` / `.zip`) Creation Guide](CHARACTER_PACKAGE.md)** for details.
 
 ---
 

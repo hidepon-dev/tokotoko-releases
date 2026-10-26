@@ -7,13 +7,7 @@
 
 [English](README.md) | **日本語**
 
-<!-- デモ動画やGIFをここに配置 -->
-<!-- <p align="center"><img src="assets/demo.gif" alt="TokoToko Demo" width="600"></p> -->
-<!-- 前後に必ず空行をあける -->
-
 https://github.com/user-attachments/assets/ad3d3bed-1db9-4a9a-b4e1-814875adcbbf
-
-<!-- 前後に必ず空行をあける -->
 
 </div>
 
@@ -34,11 +28,11 @@ https://github.com/user-attachments/assets/ad3d3bed-1db9-4a9a-b4e1-814875adcbbf
 * 🪶 **超軽量・極小フットプリント**  
   Tauri v2 と Rust で構築され、常駐時のメモリ消費やCPU負荷を極限まで抑制。ノートPCでのバッテリー駆動時でも安心して常駐させられます。
 * 🛡️ **作業集中モード (Focus Mode)**  
-  マスコットのクリック判定を透過させるモードを搭載。画面端のウィンドウ操作やテキスト選択を一切妨げません。
+  マスコットのクリック判定を背後のウィンドウへ透過させるモードを搭載。画面端のウィンドウ操作やテキスト選択を一切妨げません。
 * 💬 **すりガラス通知バー**  
   頭上に現れるスマートな通知バー。送信元（ターミナル、AI、メール等）に合わせてアイコンやアクセントカラーが美しく切り替わります。
-* 🖼️ **Character Slots (最大5スロット)**  
-  ビルトインの「Toko」に加え、最大4体の自作キャラクターや追加キャラクターを登録可能。気分に合わせてワンクリックで切り替えられます。
+* 🖼️ **Character Slots (最大5スロット) & キズナ度**  
+  ビルトインの「Toko」に加え、最大4体の自作キャラクターや追加キャラクター（`.png` / `.webp` / `.toko` / `.zip` / `.tokochar`）を登録可能。一緒に過ごした時間に応じてキズナランクが成長します。
 * 🌿 **Bit Garden (🔒 近日公開予定)**  
   キャラクターたちが暮らす電脳庭園を覗く専用ウィンドウ。今後のアップデートで順次公開予定です。
 * 🧩 **外部ツール・AI連携**  
@@ -67,11 +61,13 @@ https://github.com/user-attachments/assets/ad3d3bed-1db9-4a9a-b4e1-814875adcbbf
 ## 🚀 基本的な使い方
 
 1. **起動と終了**  
-   アプリを起動すると、デスクトップ上に Toko が現れます。マスコットを右クリックしてコンテキストメニューを開き、「終了」を選択すると終了します。
+   アプリを起動すると、デスクトップ上に Toko が現れます。マスコット（またはトレイアイコン）を右クリックしてコンテキストメニューを開き、「終了」を選択すると終了します。
 2. **作業集中モード (Focus Mode)**  
-   右クリックメニューから「Focus Mode」を切り替えることで、クリック透過のオン/オフが行えます。
-3. **設定画面 (Settings)**  
-   右クリックメニューから「設定」を開くと、マスコットの移動速度、表示スケール（50%〜120%）、通知バーのデザインなどを自由にカスタマイズできます。
+   メニューから「作業集中モード」をオンにすると、クリック透過状態になります。**解除するときは、メニューバー（macOS）またはタスクトレイ（Windows）の TokoToko アイコンからチェックを外してください。**
+3. **設定画面 (`⚙️ System Core...`)**  
+   メニューから `⚙️ System Core...` を開くと、マスコットの移動速度、表示スケール（50%〜120%）、キャラクタースロット、通知バーのデザインなどを自由にカスタマイズできます。
+
+👉 詳しい操作方法・ターミナルやChrome拡張機能の導入手順・FAQは **[TokoToko 利用者ガイド](docs/USER_GUIDE.ja.md)** をご覧ください。
 
 ---
 
@@ -79,10 +75,10 @@ https://github.com/user-attachments/assets/ad3d3bed-1db9-4a9a-b4e1-814875adcbbf
 
 TokoToko は、クリエイターやギークが自由にカスタマイズできるよう、オープンな連携口を用意しています。
 
-### 🎨 自作キャラクターの追加
-自分で描いたキャラクター画像をドラッグ＆ドロップするだけで、デスクトップを歩かせることができます。  
-画像規格（スプライトシート）を用意すれば、オリジナルの歩行やリアクションをフルアニメーションで動かせます。  
-👉 **[自作キャラクター制作・スプライトシート仕様ガイド](docs/SPRITE_SPEC.ja.md)**
+### 🎨 自作キャラクターの追加・パッケージ配布
+自分で描いたキャラクター画像（`.png` / `.webp`）や、名前・セリフをまとめたパッケージ（`.toko` / `.zip`）をドラッグ＆ドロップするだけで、デスクトップを歩かせることができます。  
+* 👉 **[自作キャラクター制作・スプライトシート仕様ガイド](docs/SPRITE_SPEC.ja.md)**
+* 👉 **[キャラクターパッケージ（`.toko` / `.zip`）制作・配布ガイド](docs/CHARACTER_PACKAGE.ja.md)**
 
 ### ⚡ ターミナル・外部アプリからの連携 (IPC)
 TokoToko はローカルソケット（macOS: Unix Domain Socket / Windows: Named Pipe）を開いており、JSONを1行流し込むだけで、好きなタイミングでマスコットをジャンプさせたりメッセージを喋らせたりできます。
@@ -94,17 +90,15 @@ TokoToko はローカルソケット（macOS: Unix Domain Socket / Windows: Name
 
 * **Windows (PowerShell) のワンライナー例:**
   ```powershell
-  \$pipe = New-Object System.IO.Pipes.NamedPipeClientStream('.', 'tokotoko_mascot.sock', [System.IO.Pipes.PipeDirection]::Out)
-  $pipe.Connect(500)$w = New-Object System.IO.StreamWriter($pipe)$w.WriteLine('{"source":"terminal","action":"jumping","duration":3000,"text":"タスク完了！"}')
-  \$w.Flush(); $w.Close();$pipe.Close()
+  $pipe = New-Object System.IO.Pipes.NamedPipeClientStream('.', 'tokotoko_mascot.sock', [System.IO.Pipes.PipeDirection]::Out); $pipe.Connect(500); $w = New-Object System.IO.StreamWriter($pipe); $w.WriteLine('{"source":"terminal","action":"jumping","duration":3000,"text":"タスク完了！"}'); $w.Flush(); $w.Close(); $pipe.Close()
   ```
 
 自作スクリプト、CI/CD完了フック、エディタ拡張などから自由にTokoTokoを動かせます。  
-👉 **[ローカルIPC通信プロトコル仕様書](docs/IPC_SPEC.ja.md)**
+* 👉 **[ローカルIPC通信プロトコル仕様書](docs/IPC_SPEC.ja.md)**
 
 ---
 
-## 📄 利用規約・ライセンス
+## 📄 利用規約・プライバシーポリシー
 
 本ソフトウェアは無料でお使いいただけるフリーウェア（プロプライエタリ）です。ソースコードの開示や無断再配布は行っておりません。
 
@@ -114,7 +108,9 @@ TokoToko はローカルソケット（macOS: Unix Domain Socket / Windows: Name
   本ソフトウェアを自社製品や広告等へ組み込むこと、および再販売・再配布することは禁止しています。  
   *(※個人の動画配信や画面共有においてデスクトップ上のTokoTokoが映り込むことは大歓迎です)*
 
-詳細な利用条件、禁止事項、および免責事項については、[ソフトウェア利用規約 (TERMS_OF_USE.md)](TERMS_OF_USE.md) をご確認ください。
+詳細な利用条件、禁止事項、クレジット表記、および免責事項については、以下のドキュメントをご確認ください。
+* 📜 **[ソフトウェア利用規約 (TERMS_OF_USE.md)](TERMS_OF_USE.md)**
+* 🔒 **[プライバシーポリシー (PRIVACY_POLICY.md)](docs/privacy/PRIVACY_POLICY.md)**
 
 ---
 
