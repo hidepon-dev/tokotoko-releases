@@ -143,3 +143,10 @@ A. Please check the following:
 A. Check out our creator guides:
 - Creating a standalone sprite sheet 👉 [Custom Character & Sprite Sheet Specification Guide](SPRITE_SPEC.md)
 - Bundling names, roles, and quotes into a package 👉 [Character Package (`.toko` / `.zip`) Creation Guide](CHARACTER_PACKAGE.md)
+
+**Q. Does TokoToko make sound effects or voice lines? Does it jump all over the screen?**  
+A. No. TokoToko is intentionally designed with a **"completely silent (no audio output)"** and **"horizontal strolling along screen edges"** philosophy so it will never interrupt your workflow, cover your code or text, or disrupt online calls and music playback.
+
+**Q. Is TokoToko free to use? Are there paid features?**  
+A. Yes! All **core features**—including the desktop mascot, Focus Mode, terminal/AI IPC integration, and importing your own custom characters (`.png` / `.toko` / `.zip`)—are **100% free forever**.  
+*Note: Admission to the cybernetic garden window ("Bit Garden" via Bit Garden Passport) and select official character packs are planned as optional paid digital items on external creator platforms such as BOOTH.*

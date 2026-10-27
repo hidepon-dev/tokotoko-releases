@@ -21,6 +21,8 @@ https://github.com/user-attachments/assets/ad3d3bed-1db9-4a9a-b4e1-814875adcbbf
 **TokoToko** is an ultra-lightweight desktop mascot that gently strolls across the edge of your screen.  
 Led by its first resident, **Toko**, these companions quietly stay by your side—celebrating successful terminal builds, pondering alongside AI assistants, and never getting in the way of your focused workflow.
 
+Designed with a **"non-intrusive, silent companion"** philosophy, TokoToko produces **no sound effects or voice output** and **walks horizontally along your screen edges** without jumping around or obstructing your windows. It is completely safe to keep running during online meetings, late-night coding sessions, or while listening to music.
+
 ---
 
 ## ✨ Features
@@ -34,7 +36,7 @@ Led by its first resident, **Toko**, these companions quietly stay by your side�
 * 🖼️ **Character Slots (Up to 5 Slots) & Kizuna Bond**  
   In addition to the built-in "Toko", register up to 4 custom or downloadable characters (`.png` / `.webp` / `.toko` / `.zip` / `.tokochar`). Your Kizuna bond rank grows as you spend time working together.
 * 🌿 **Bit Garden (🔒 Coming Soon)**  
-  A dedicated window overlooking the cybernetic garden where residents live and wander together. Scheduled for upcoming updates.
+  A dedicated window overlooking the cybernetic garden where residents live and wander together. Scheduled for upcoming updates (Admission via Bit Garden Passport will be available on external platforms like BOOTH).
 * 🧩 **Smart Integrations & IPC**  
   Seamlessly integrates with Google Chrome extensions and supports one-liner triggers via local inter-process communication (Unix Domain Sockets on macOS / Named Pipes on Windows).
 
