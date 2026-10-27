@@ -13,7 +13,7 @@ This guide covers basic interactions, the System Core settings window, terminal 
 | **Left-Click** | The mascot performs a joyful jump (`jumping`) |
 | **Left-Drag** | Grab and move the mascot anywhere across your monitors |
 | **Right-Click** | Opens the context menu |
-| **Menu Bar / System Tray** | Access all controls (Focus Mode toggle, Jump, System Core, Quit) from the tray icon |
+| **Menu Bar / System Tray** | Access all controls (Focus Mode toggle, System Core, Quit) from the tray icon |
 
 ### 🛡️ Focus Mode (Click-Through) & How to Exit
 When you want to focus on coding or browsing without the mascot intercepting mouse clicks, enable **Focus Mode** from the right-click menu or system tray icon. The mascot turns semi-transparent, allowing all mouse clicks and drags to pass directly through to the windows behind it.
