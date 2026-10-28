@@ -150,3 +150,11 @@ A. No. TokoToko is intentionally designed with a **"completely silent (no audio 
 **Q. Is TokoToko free to use? Are there paid features?**  
 A. Yes! All **core features**—including the desktop mascot, Focus Mode, terminal/AI IPC integration, and importing your own custom characters (`.png` / `.toko` / `.zip`)—are **100% free forever**.  
 *Note: Admission to the cybernetic garden window ("Bit Garden" via Bit Garden Passport) and select official character packs are planned as optional paid digital items on external creator platforms such as BOOTH.*
+
+**Q. On macOS, why does it say "TokoToko is damaged and can't be opened. You should move it to the Trash"?**  
+A. Recent macOS versions (Tahoe / Golden Gate) enforce strict Gatekeeper security for apps distributed without Apple notarization.  
+To bypass this warning, open **Terminal.app** and run the following command once to remove the quarantine flag:
+```bash
+xattr -cr /Applications/TokoToko.app
+```
+*After running this command, you can launch TokoToko normally with a double-click.*

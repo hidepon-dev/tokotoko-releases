@@ -44,19 +44,30 @@ Designed with a **"non-intrusive, silent companion"** philosophy, TokoToko produ
 
 ## 📦 Installation
 
-Choose the installation method for your operating system:
+Download and install TokoToko for your operating system:
 
 ### 🪟 Windows
-* Install directly from the **Microsoft Store**:  
+* **Microsoft Store** (Recommended): One-click installation and automatic updates from the Microsoft Store.  
   <!-- [Microsoft Store Badge Link] -->
-* Or download the standalone installer (`.msi` / `.exe`) from [GitHub Releases](https://github.com/hidepon-dev/tokotoko-releases/releases).
+* **GitHub Releases**: Download the `.msi` installer from our [Releases page](https://github.com/hidepon-dev/tokotoko-releases/releases).
+
+---
 
 ### 🍏 macOS
-* Available via **Homebrew Cask**:
-  ```bash
-  brew install --cask tokotoko
-  ```
-* Or download the `.dmg` package from [GitHub Releases](https://github.com/hidepon-dev/tokotoko-releases/releases) and drag it to your Applications folder.
+Download the latest `.dmg` from our [Releases page](https://github.com/hidepon-dev/tokotoko-releases/releases) and drag `TokoToko.app` into your **Applications** folder.
+
+> 💬 **A Quick Note for macOS Users from Developer hidepon**  
+> TokoToko for macOS is distributed as an un-notarized app because the developer (hidepon) has not enrolled in the Apple Developer Program (which requires an annual paid subscription and real-name public disclosure).  
+> We sincerely apologize for the inconvenience and extra steps required. As this is an independently developed indie project, we kindly ask for your understanding and gracious support!
+
+#### ⚠️ If you see: *"TokoToko is damaged and can't be opened. You should move it to the Trash"*
+Due to strict Gatekeeper security in recent macOS versions (Tahoe / Golden Gate), un-notarized apps are automatically blocked and cannot be opened via System Settings.  
+Before launching the app for the first time, open **Terminal.app** and run the following command to remove the quarantine flag:
+
+```bash
+xattr -cr /Applications/TokoToko.app
+```
+*After running this command once, you can launch TokoToko normally with a double-click.*
 
 ---
 

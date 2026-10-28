@@ -44,19 +44,30 @@ https://github.com/user-attachments/assets/ad3d3bed-1db9-4a9a-b4e1-814875adcbbf
 
 ## 📦 インストール方法
 
-お使いのOSに合わせて、以下の方法で簡単にインストールできます。
+お使いのOSに合わせて、以下の方法でダウンロード・インストールしてください。
 
 ### 🪟 Windows
-* **Microsoft Store** よりワンクリックでインストール可能です。  
+* **Microsoft Store**（推奨）: ストアよりワンクリックでインストール・自動更新できます。  
   <!-- [Microsoft Store バッジリンク] -->
-* または [GitHub Releases](https://github.com/hidepon-dev/tokotoko-releases/releases) からインストーラー（`.msi` / `.exe`）をダウンロードしてください。
+* **GitHub Releases**: [Releases ページ](https://github.com/hidepon-dev/tokotoko-releases/releases) からインストーラー（`.msi`）をダウンロードして実行してください。
+
+---
 
 ### 🍏 macOS
-* **Homebrew Cask** に対応しています：
-  ```bash
-  brew install --cask tokotoko
-  ```
-* または [GitHub Releases](https://github.com/hidepon-dev/tokotoko-releases/releases) から `.dmg` をダウンロードし、アプリケーションフォルダへ配置してください。
+[Releases ページ](https://github.com/hidepon-dev/tokotoko-releases/releases) から最新の `.dmg` をダウンロードし、`TokoToko.app` を「アプリケーション」フォルダへドラッグ＆ドロップしてください。
+
+> 💬 **macOS ユーザーの皆様へ（開発者 hidepon よりお詫びとお知らせ）**  
+> 誠に恐縮ながら、開発者の hidepon は Apple Developer Program（年間有償登録および本名公開）への登録を行っていないため、macOS 版は未公証の「野良アプリ」としての配布となります。  
+> 皆様には大変お手数とご不便をお掛けしますが、個人開発のインディーソフトウェアゆえ、何卒ご容赦いただき、温かく見守っていただけますと幸いです。
+
+#### ⚠️ 初回起動時に「壊れているため開けません（ゴミ箱に入れる必要があります）」と表示される場合
+近年の macOS（Tahoe / Golden Gate）における Gatekeeper のセキュリティ強化により、未公証アプリに対して上記ダイアログが表示され、システム設定の GUI 等からも起動がブロックされます。  
+お手数ですが、初回起動前に**ターミナル（Terminal.app）**を開き、以下のコマンドを1行実行して隔離属性（quarantine）を解除してください。
+
+```bash
+xattr -cr /Applications/TokoToko.app
+```
+※コマンド実行後は、通常通りダブルクリックで起動できるようになります。
 
 ---
 
