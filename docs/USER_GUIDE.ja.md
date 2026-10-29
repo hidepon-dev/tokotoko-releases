@@ -131,8 +131,9 @@ A. マスコットを右クリックして **「終了 (Quit)」** を選ぶか�
 
 **Q. モニター構成を変えたら、マスコットが画面外に消えてしまいました。**  
 A. アプリを一度終了し、以下の設定ファイル（`config.json`）内の `"lastPosition"` の値を `null` に書き換えてから再起動すると、初期位置に復帰します。
-- **macOS**: `~/Library/Application Support/com.hidepon.tokotoko/config.json`
-- **Windows**: `%APPDATA%\com.hidepon.tokotoko\config.json`
+- **全プラットフォーム共通**: `~/.tokotoko/config.json`
+  - **Windows**: `%USERPROFILE%\.tokotoko\config.json` *(エクスプローラーのアドレスバーに貼り付けて Enter)*
+  - **macOS / Linux**: `~/.tokotoko/config.json`
 
 **Q. ターミナル連携を送ってもマスコットが反応しません。**  
 A. 以下をご確認ください：

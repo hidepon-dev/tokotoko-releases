@@ -131,8 +131,9 @@ A. Right-click the mascot and choose **Quit**, or click the TokoToko icon in you
 
 **Q. My mascot disappeared off-screen after changing my monitor layout!**  
 A. Quit TokoToko, open the configuration file (`config.json`) at the path below, set `"lastPosition"` to `null`, and relaunch the app:
-- **macOS**: `~/Library/Application Support/com.hidepon.tokotoko/config.json`
-- **Windows**: `%APPDATA%\com.hidepon.tokotoko\config.json`
+- **All Platforms**: `~/.tokotoko/config.json`
+  - **Windows**: `%USERPROFILE%\.tokotoko\config.json` *(Paste into File Explorer's address bar and press Enter)*
+  - **macOS / Linux**: `~/.tokotoko/config.json`
 
 **Q. Terminal commands aren't triggering mascot animations.**  
 A. Please check the following:

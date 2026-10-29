@@ -49,7 +49,8 @@ https://github.com/user-attachments/assets/ad3d3bed-1db9-4a9a-b4e1-814875adcbbf
 ### 🪟 Windows
 * **Microsoft Store**（推奨）: ストアよりワンクリックでインストール・自動更新できます。  
   <!-- [Microsoft Store バッジリンク] -->
-* **GitHub Releases**: [Releases ページ](https://github.com/hidepon-dev/tokotoko-releases/releases) からインストーラー（`.msi`）をダウンロードして実行してください。
+* **GitHub Releases**: [Releases ページ](https://github.com/hidepon-dev/tokotoko-releases/releases) からインストーラー（`.msi`）をダウンロードして実行してください。  
+  *(※初回実行時に「Windows によって PC が保護されました」と表示された場合は、**「詳細情報」＞「実行」** をクリックしてインストールしてください)*
 
 ---
 
