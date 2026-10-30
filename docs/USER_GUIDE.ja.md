@@ -50,7 +50,7 @@
 
 ### 🧩 (4) Extensions（外部拡張機能連携）
 - **Chrome Native Messaging Host**: Chrome 拡張機能と TokoToko 本体を繋ぐブリッジ設定です。**「Install」** ボタンを押すことで OS に連携マニフェストが自動登録されます。
-- **TokoToko Gemini Integration / Gmail Connector**: 各拡張機能からの通知受け入れを個別に ON / OFF できます。
+- **Allowed Chrome Extensions（承認済み拡張機能リスト）**: 通信を許可する Chrome 拡張機能の Extension ID をホワイトリスト管理します。公式の **TokoToko Gemini Integration** は最初からデフォルト登録されており、自作の拡張機能やテスト中の ID も **「Add Extension」** から自由に追加・登録できます。
 
 ### ℹ️ (5) About（バージョン情報・更新確認）
 - **Check for Updates（更新を確認）**: GitHub 上の最新リリースを確認し、新しいバージョンがある場合はダウンロード先をご案内します。
@@ -119,7 +119,7 @@ Google Chrome 上の AI アシスタント（Google Gemini）の思考状態や�
 
 1. TokoToko の設定画面（`⚙️ System Core...`）を開き、**「Extensions」** タブを選択します。
 2. **「Chrome Native Messaging Host」** 欄にある **「Install」** ボタンをクリックします（ステータスバッジが `INSTALLED` に変わります）。
-3. 連携したい拡張機能のトグルスイッチが **ON** になっていることを確認します。
+3. **「Allowed Chrome Extensions」** リストに **TokoToko Gemini Integration** が登録されていることを確認します（自作やテスト版拡張機能を利用する場合は **「Add Extension」** ボタンから 32 文字の Extension ID を追加登録してください）。
 4. Chrome に拡張機能をインストールして Gemini ページを開くと、入力中・思考中・回答完了に合わせてマスコットがリアクションします。
 
 ---

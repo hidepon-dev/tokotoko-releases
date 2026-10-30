@@ -50,7 +50,7 @@ Select **`⚙️ System Core...`** from the menu to open the configuration windo
 
 ### 🧩 (4) Extensions
 - **Chrome Native Messaging Host**: Manages the bridge between Chrome extensions and TokoToko. Click **Install** to register the host manifest with your OS.
-- **TokoToko Gemini Integration / Gmail Connector**: Enable or disable incoming notifications from each extension individually.
+- **Allowed Chrome Extensions**: Manages the whitelist of Chrome Extension IDs authorized to communicate with TokoToko. The official **TokoToko Gemini Integration** is registered by default, and custom or test extensions can be added via **Add Extension**.
 
 ### ℹ️ (5) About
 - **Check for Updates**: Queries GitHub Releases to check if a newer version of TokoToko is available.
@@ -119,7 +119,7 @@ To link TokoToko with AI assistants (such as Google Gemini) in Google Chrome:
 
 1. Open **`⚙️ System Core...`** in TokoToko and select the **Extensions** tab.
 2. Under **Chrome Native Messaging Host**, click the **Install** button (the status badge will change to `INSTALLED`).
-3. Ensure the toggle switch for the extension you want to use is turned **ON**.
+3. Confirm that **TokoToko Gemini Integration** is listed under **Allowed Chrome Extensions** (if you are using a custom or test extension, click **Add Extension** to register its 32-character Extension ID).
 4. Install the companion Chrome extension and open Gemini—your mascot will automatically react as you type, while Gemini thinks, and when responses finish!
 
 ---
