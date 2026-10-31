@@ -49,7 +49,7 @@ Download and install TokoToko for your operating system:
 ### 🪟 Windows
 * **Microsoft Store** (Recommended): One-click installation and automatic updates from the Microsoft Store.  
   <br>
-  <a href="https://get.microsoft.com/installer/download/9pdgm8gc5nlf?referrer=appbadge" target="_self">
+  <a href="https://apps.microsoft.com/detail/9pdgm8gc5nlf?referrer=appbadge&mode=full" target="_blank" rel="noopener noreferrer">
     <img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
   </a>
 * **GitHub Releases**: Download the `.msi` installer from our [Releases page](https://github.com/hidepon-dev/tokotoko-releases/releases).  

@@ -49,7 +49,7 @@
 ### 🪟 Windows
 * **Microsoft Store**（推奨）: ストアよりワンクリックでインストール・自動更新できます。  
   <br>
-  <a href="https://get.microsoft.com/installer/download/9pdgm8gc5nlf?referrer=appbadge" target="_self">
+  <a href="https://apps.microsoft.com/detail/9pdgm8gc5nlf?referrer=appbadge&mode=full" target="_blank" rel="noopener noreferrer">
     <img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
   </a>
 * **GitHub Releases**: [Releases ページ](https://github.com/hidepon-dev/tokotoko-releases/releases) からインストーラー（`.msi`）をダウンロードして実行してください。  
