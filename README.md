@@ -7,7 +7,7 @@ An ultra-lightweight, autonomous desktop mascot that keeps you company and syncs
 
 **English** | [日本語 (Japanese)](README.ja.md)
 
-https://github.com/user-attachments/assets/ad3d3bed-1db9-4a9a-b4e1-814875adcbbf
+![TokoToko](assets/TokoToko_Bit_Garden_Edition_1920x1072.png)
 
 </div>
 
@@ -38,7 +38,7 @@ Designed with a **"non-intrusive, silent companion"** philosophy, TokoToko produ
 * 🌿 **Bit Garden (🔒 Coming Soon)**  
   A dedicated window overlooking the cybernetic garden where residents live and wander together. Scheduled for upcoming updates (Admission via Bit Garden Passport will be available on external platforms like BOOTH).
 * 🧩 **Smart Integrations & IPC**  
-  Seamlessly integrates with Google Chrome extensions and supports one-liner triggers via local inter-process communication (Unix Domain Sockets on macOS / Named Pipes on Windows).
+  Seamlessly integrates with Google Chrome extensions ([TokoToko Gemini Integration](https://chromewebstore.google.com/detail/ccchboekidhhodepmlkdddhpmekbhlhc)) and supports one-liner triggers via local inter-process communication (Unix Domain Sockets on macOS / Named Pipes on Windows).
 
 ---
 
@@ -48,7 +48,10 @@ Download and install TokoToko for your operating system:
 
 ### 🪟 Windows
 * **Microsoft Store** (Recommended): One-click installation and automatic updates from the Microsoft Store.  
-  <!-- [Microsoft Store Badge Link] -->
+  <br>
+  <a href="https://get.microsoft.com/installer/download/9pdgm8gc5nlf?referrer=appbadge" target="_self">
+    <img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
+  </a>
 * **GitHub Releases**: Download the `.msi` installer from our [Releases page](https://github.com/hidepon-dev/tokotoko-releases/releases).  
   *(Note: If Windows SmartScreen displays "Windows protected your PC" during installation, click **More info > Run anyway**).*
 

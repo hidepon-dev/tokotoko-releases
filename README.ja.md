@@ -7,7 +7,7 @@
 
 [English](README.md) | **日本語**
 
-https://github.com/user-attachments/assets/ad3d3bed-1db9-4a9a-b4e1-814875adcbbf
+![TokoToko](assets/TokoToko_Bit_Garden_Edition_1920x1072.png)
 
 </div>
 
@@ -38,7 +38,7 @@ https://github.com/user-attachments/assets/ad3d3bed-1db9-4a9a-b4e1-814875adcbbf
 * 🌿 **Bit Garden (🔒 近日公開予定)**  
   キャラクターたちが暮らす電脳庭園を覗く専用ウィンドウ。今後のアップデートで順次公開予定です（※入場用 Bit Garden Passport は BOOTH 等の外部ショップにて提供予定）。
 * 🧩 **外部ツール・AI連携**  
-  Google Chrome拡張機能との連動や、ローカルソケット（Unix Domain Socket / Windows Named Pipe）経由でのワンライナー連携に対応しています。
+  Google Chrome 拡張機能（[TokoToko Gemini Integration](https://chromewebstore.google.com/detail/ccchboekidhhodepmlkdddhpmekbhlhc)）とのリアルタイム連動や、ローカルソケット（Unix Domain Socket / Windows Named Pipe）経由でのワンライナー連携に対応しています。
 
 ---
 
@@ -48,7 +48,10 @@ https://github.com/user-attachments/assets/ad3d3bed-1db9-4a9a-b4e1-814875adcbbf
 
 ### 🪟 Windows
 * **Microsoft Store**（推奨）: ストアよりワンクリックでインストール・自動更新できます。  
-  <!-- [Microsoft Store バッジリンク] -->
+  <br>
+  <a href="https://get.microsoft.com/installer/download/9pdgm8gc5nlf?referrer=appbadge" target="_self">
+    <img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
+  </a>
 * **GitHub Releases**: [Releases ページ](https://github.com/hidepon-dev/tokotoko-releases/releases) からインストーラー（`.msi`）をダウンロードして実行してください。  
   *(※初回実行時に「Windows によって PC が保護されました」と表示された場合は、**「詳細情報」＞「実行」** をクリックしてインストールしてください)*
 

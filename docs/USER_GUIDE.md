@@ -120,7 +120,7 @@ To link TokoToko with AI assistants (such as Google Gemini) in Google Chrome:
 1. Open **`⚙️ System Core...`** in TokoToko and select the **Extensions** tab.
 2. Under **Chrome Native Messaging Host**, click the **Install** button (the status badge will change to `INSTALLED`).
 3. Confirm that **TokoToko Gemini Integration** is listed under **Allowed Chrome Extensions** (if you are using a custom or test extension, click **Add Extension** to register its 32-character Extension ID).
-4. Install the companion Chrome extension and open Gemini—your mascot will automatically react as you type, while Gemini thinks, and when responses finish!
+4. Install the companion extension from the [Chrome Web Store (TokoToko Gemini Integration)](https://chromewebstore.google.com/detail/ccchboekidhhodepmlkdddhpmekbhlhc) and open Gemini—your mascot will automatically react as you type, while Gemini thinks, and when responses finish!
 
 ---
 
