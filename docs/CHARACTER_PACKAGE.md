@@ -2,7 +2,7 @@
 
 **English** | [日本語 (Japanese)](CHARACTER_PACKAGE.ja.md)
 
-This guide explains how to bundle your custom sprite sheet together with a **character name, role title, status quote, and multi-language (`i18n`) settings** into a single **Open Character Package (`.toko` / `.zip`)** for easy importing and sharing in "TokoToko".
+This guide explains how to bundle your custom sprite sheet together with a **character name, role title, status quote, and multi-language (`i18n`) settings** into a single **Open Character Package (`.toko` / `.zip`)** for easy importing and sharing in TokoToko.
 
 ---
 
@@ -34,7 +34,7 @@ To ensure security and maintain ultra-lightweight performance, packages must adh
 - **Maximum Uncompressed Size**: Up to **20 MB** total.
 - **Maximum File Count**: Up to **20 files** inside the archive.
 - **Flat Archive Structure**: Do not include subdirectories or relative path traversals (`..`). Select the files directly when creating the ZIP archive.
-- **Sprite Sheet Dimensions**: Aspect ratio must be **8:11** (8 columns × 11 rows), with a recommended and **maximum resolution of 2048 × 2816 px**. See the [Sprite Sheet Specification Guide](SPRITE_SPEC.md) for details.
+- **Sprite Sheet Dimensions**: Aspect ratio must be **8:11** (8 columns × 11 rows), up to **2048 × 2816 px** (recommended). See the [Sprite Sheet Specification Guide](SPRITE_SPEC.md) for details.
 
 ---
 

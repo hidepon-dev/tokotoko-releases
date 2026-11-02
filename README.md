@@ -33,8 +33,8 @@ Designed with a **"non-intrusive, silent companion"** philosophy, TokoToko produ
   Toggle click-through transparency so mouse clicks pass straight through the mascot. Work on windows, select text, or click buttons beneath the mascot without interruption.
 * 💬 **Frosted Glass Notification Bar**  
   A sleek, frosted-glass bar pops up above the mascot's head, dynamically switching icons and accent colors based on the sender (Terminal, Gemini, Mail, etc.).
-* 🖼️ **Character Slots (Up to 5 Slots) & Kizuna Bond**  
-  In addition to the built-in "Toko", register up to 4 custom or downloadable characters (`.png` / `.webp` / `.toko` / `.zip` / `.tokochar`). Your Kizuna bond rank grows as you spend time working together.
+* 🖼️ **Character Slots (Up to 5 Slots) & Kizuna (Bond) System**  
+  In addition to the built-in "Toko", register up to 4 custom or downloadable characters (`.png` / `.webp` / `.toko` / `.zip` / `.tokochar`). Your Kizuna Rank grows as you spend time working together.
 * 🌿 **Bit Garden (🔒 Coming Soon)**  
   A dedicated window overlooking the cybernetic garden where residents live and wander together. Scheduled for upcoming updates (Admission via Bit Garden Passport will be available on external platforms like BOOTH).
 * 🧩 **Smart Integrations & IPC**  
@@ -60,12 +60,12 @@ Download and install TokoToko for your operating system:
 ### 🍏 macOS
 Download the latest `.dmg` from our [Releases page](https://github.com/hidepon-dev/tokotoko-releases/releases) and drag `TokoToko.app` into your **Applications** folder.
 
-> 💬 **A Quick Note for macOS Users from Developer hidepon**  
-> TokoToko for macOS is distributed as an un-notarized app because the developer (hidepon) has not enrolled in the Apple Developer Program (which requires an annual paid subscription and real-name public disclosure).  
-> We sincerely apologize for the inconvenience and extra steps required. As this is an independently developed indie project, we kindly ask for your understanding and gracious support!
+> 💬 **A Quick Note for macOS Users from hidepon (Developer)**  
+> TokoToko for macOS is distributed as an unnotarized app because I am not enrolled in the Apple Developer Program (which requires an annual paid membership and public disclosure of my legal name).  
+> I sincerely apologize for the extra steps required to open the app. As this is a solo indie project, I truly appreciate your understanding and warm support!
 
 #### ⚠️ If you see: *"TokoToko is damaged and can't be opened. You should move it to the Trash"*
-Due to strict Gatekeeper security in recent macOS versions (Tahoe / Golden Gate), un-notarized apps are automatically blocked and cannot be opened via System Settings.  
+Due to strict Gatekeeper security in recent macOS versions, unnotarized apps are automatically blocked and cannot be opened via System Settings.  
 Before launching the app for the first time, open **Terminal.app** and run the following command to remove the quarantine flag:
 
 ```bash
@@ -84,7 +84,7 @@ xattr -cr /Applications/TokoToko.app
 3. **System Core Settings (`⚙️ System Core...`)**  
    Open **`⚙️ System Core...`** from the menu to customize walking speed, display scale (50% to 120%), character slots, and notification bar styling.
 
-👉 For full control instructions, shell/extension setup, and troubleshooting FAQ, see the **[TokoToko User Guide](docs/USER_GUIDE.md)** *(or [Japanese](docs/USER_GUIDE.ja.md))*.
+👉 For full control instructions, shell/extension setup, and troubleshooting FAQ, see the **[TokoToko User Guide](docs/USER_GUIDE.md)** ([日本語](docs/USER_GUIDE.ja.md)).
 
 ---
 
@@ -94,8 +94,8 @@ TokoToko offers open interfaces designed for creators and hackers who want to bu
 
 ### 🎨 Custom Characters & Open Packages
 Add your own hand-drawn sprite sheets (`.png` / `.webp`) or character packages bundling names and quotes (`.toko` / `.zip`) simply by dragging and dropping them into the app.  
-* 👉 **[Custom Character & Sprite Sheet Specification Guide](docs/SPRITE_SPEC.md)** *(or [Japanese](docs/SPRITE_SPEC.ja.md))*
-* 👉 **[Character Package (`.toko` / `.zip`) Creation Guide](docs/CHARACTER_PACKAGE.md)** *(or [Japanese](docs/CHARACTER_PACKAGE.ja.md))*
+* 👉 **[Custom Character & Sprite Sheet Specification Guide](docs/SPRITE_SPEC.md)** ([日本語](docs/SPRITE_SPEC.ja.md))
+* 👉 **[Character Package (`.toko` / `.zip`) Creation Guide](docs/CHARACTER_PACKAGE.md)** ([日本語](docs/CHARACTER_PACKAGE.ja.md))
 
 ### ⚡ CLI & Terminal Integration (IPC)
 TokoToko exposes a local socket (`/tmp/tokotoko_mascot.sock` on macOS / `\\.\pipe\tokotoko_mascot.sock` on Windows). Send a single line of JSON to trigger custom mascot animations and speech bubbles instantly.
@@ -111,13 +111,13 @@ TokoToko exposes a local socket (`/tmp/tokotoko_mascot.sock` on macOS / `\\.\pip
   ```
 
 Hook it into CI/CD build scripts, editor tasks, or home automation webhooks to build your own companion workflow.  
-* 👉 **[Local IPC Communication Protocol Specification](docs/IPC_SPEC.md)** *(or [Japanese](docs/IPC_SPEC.ja.md))*
+* 👉 **[Local IPC Protocol Specification](docs/IPC_SPEC.md)** ([日本語](docs/IPC_SPEC.ja.md))
 
 ---
 
 ## 📄 License, Terms of Use & Privacy
 
-This software is freeware (proprietary) provided free of charge. Source code disclosure, reverse engineering, and unauthorized redistribution are strictly prohibited.
+TokoToko is provided free of charge as **proprietary freeware**. Source code disclosure, reverse engineering, and unauthorized redistribution are strictly prohibited.
 
 * **Personal & Organizational Use**:  
   Free of charge for standard use on personal and company-issued machines.

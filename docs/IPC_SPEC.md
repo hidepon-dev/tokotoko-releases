@@ -1,8 +1,8 @@
-# Local IPC Communication Protocol Specification (IPC_SPEC) 🐾
+# Local IPC Protocol Specification (IPC_SPEC) 🐾
 
 **English** | [日本語 (Japanese)](IPC_SPEC.ja.md)
 
-This document describes the **local Inter-Process Communication (IPC) protocol specification** and **implementation examples** for controlling the desktop mascot "TokoToko" from external tools such as terminals (shells), editor extensions (VS Code, etc.), background scripts, and CI/CD pipelines.
+This document describes the **local Inter-Process Communication (IPC) protocol specification** and **implementation examples** for controlling the TokoToko desktop mascot from external tools such as terminals (shells), editor extensions (VS Code, etc.), background scripts, and CI/CD pipelines.
 
 TokoToko listens on OS-standard local sockets, allowing you to trigger mascot action animations and pop up frosted-glass notification bar messages simply by piping a single line of JSON (JSON Lines format).
 
@@ -53,7 +53,7 @@ Standard structure of the JSON object sent to the socket:
 | :--- | :--- | :---: | :--- | :--- |
 | `source` | `string` | Optional | `"default"` | Origin identifier (e.g., `"terminal"`). Determines the left icon and accent color theme of the notification bar. |
 | `action` | `string` | Optional | `"idle"` | Action name to execute (corresponds to an action identifier in the sprite sheet). If omitted, only the notification bar is shown. |
-| `duration` | `number` | Optional | `1000` (ms) | Duration to sustain the action in positive integer milliseconds. Returns to `idle` once elapsed. |
+| `duration` | `number` | Optional | `1000` (ms) | Duration to sustain the action in milliseconds (positive integer). Returns to `idle` once elapsed. |
 | `text` | `string` | Optional | `null` | Text message to display on the frosted-glass notification bar. If omitted or `null`, only the animation plays without showing the notification bar. |
 
 ### Notification Bar Styling by `source`
@@ -84,7 +84,7 @@ Accepts action identifiers defined in the [Sprite Sheet Specification](SPRITE_SP
 | `failed` | Disappointment & sigh (command error, test failed, crash, etc.) |
 | `waiting` | Tucking hair behind ear / pose change (standing by, reminders) |
 | `running` | Pondering with finger pointing (thinking, review request, consultation) |
-| `review` | Typing on floating aerial hologram (in-progress background builds/tasks) |
+| `review` | Typing on a floating hologram (in-progress background builds/tasks) |
 | `surprised` | Startled hop & hand to chest (urgent notifications, incoming emails) |
 | `waving` | Greeting / peace sign |
 | `bored` | Drowsy & bored idling |

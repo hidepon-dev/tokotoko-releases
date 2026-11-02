@@ -2,7 +2,7 @@
 
 **English** | [日本語 (Japanese)](USER_GUIDE.ja.md)
 
-This guide covers basic interactions, the System Core settings window, terminal & Chrome extension setup, and Frequently Asked Questions (FAQ) for the desktop mascot "TokoToko".
+This guide covers basic interactions, the System Core settings window, terminal & Chrome extension setup, and Frequently Asked Questions (FAQ) for the TokoToko desktop mascot.
 
 ---
 
@@ -50,7 +50,7 @@ Select **`⚙️ System Core...`** from the menu to open the configuration windo
 
 ### 🧩 (4) Extensions
 - **Chrome Native Messaging Host**: Manages the bridge between Chrome extensions and TokoToko. Click **Install** to register the host manifest with your OS.
-- **Allowed Chrome Extensions**: Manages the whitelist of Chrome Extension IDs authorized to communicate with TokoToko. The official **TokoToko Gemini Integration** is registered by default, and custom or test extensions can be added via **Add Extension**.
+- **Allowed Chrome Extensions**: Manages the allowlist of Chrome Extension IDs authorized to communicate with TokoToko. The official **TokoToko Gemini Integration** is registered by default, and custom or test extensions can be added via **Add Extension**.
 
 ### ℹ️ (5) About
 - **Check for Updates**: Queries GitHub Releases to check if a newer version of TokoToko is available.
@@ -109,7 +109,7 @@ function Prompt {
 }
 ```
 
-For custom notification messages and Python / Node.js integration examples, see the [Local IPC Communication Protocol Specification](IPC_SPEC.md).
+For custom notification messages and Python / Node.js integration examples, see the [Local IPC Protocol Specification](IPC_SPEC.md).
 
 ---
 
@@ -153,7 +153,7 @@ A. Yes! All **core features**—including the desktop mascot, Focus Mode, termin
 *Note: Admission to the cybernetic garden window ("Bit Garden" via Bit Garden Passport) and select official character packs are planned as optional paid digital items on external creator platforms such as BOOTH.*
 
 **Q. On macOS, why does it say "TokoToko is damaged and can't be opened. You should move it to the Trash"?**  
-A. Recent macOS versions (Tahoe / Golden Gate) enforce strict Gatekeeper security for apps distributed without Apple notarization.  
+A. Recent macOS versions enforce strict Gatekeeper security for unnotarized apps distributed without Apple notarization.  
 To bypass this warning, open **Terminal.app** and run the following command once to remove the quarantine flag:
 ```bash
 xattr -cr /Applications/TokoToko.app

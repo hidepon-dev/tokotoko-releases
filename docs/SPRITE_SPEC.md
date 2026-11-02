@@ -2,7 +2,7 @@
 
 **English** | [日本語 (Japanese)](SPRITE_SPEC.ja.md)
 
-This guide outlines the **sprite sheet specifications** and **registration steps** required to import your own original characters into the desktop mascot "TokoToko".
+This guide outlines the **sprite sheet specifications** and **registration steps** required to import your own original characters into the TokoToko desktop mascot.
 
 With a single image file structured according to this specification, TokoToko can render smooth autonomous walking and rich reactive animations directly on your desktop.
 
@@ -58,8 +58,8 @@ Each row contains **8 frames (Col 0 through Col 7)** that form a single seamless
 | **Row 04** | `jumping` | Joyful jumping with bounce | Left-click / CLI command success (`Exit 0`) |
 | **Row 05** | `failed` | Anxious slump, sigh, drop head | CLI failure (`Exit != 0`) / Build error |
 | **Row 06** | `waiting` | Tucking hair behind ear, shifting pose | Extended idle pause / Awaiting input |
-| **Row 07** | `running` | Fold arms to ponder → pointing finger | Prompt sent / AI thinking state |
-| **Row 08** | `review` | Typing on aerial glowing hologram | Build running / Streaming AI response |
+| **Row 07** | `running` | Folding arms in thought → pointing finger | Prompt sent / AI thinking state |
+| **Row 08** | `review` | Typing on a floating hologram | Build running / Streaming AI response |
 | **Row 09** | `surprised` | Startled hop, hand on chest | Alert popups / New mail / Interruptions |
 | **Row 10** | `bored` | Drowsy nodding, yawning, sleepy | Extended user inactivity |
 
@@ -83,7 +83,7 @@ Custom sprite sheets can be registered via drag-and-drop:
 1. Right-click the active mascot on your desktop and choose **`⚙️ System Core...`**.
 2. Open the **Character Slots** tab.
 3. Drag and drop your image file (`.png` or `.webp`) into any custom slot card (**Slot 1 through Slot 4** — Slot 0 is reserved for Toko).
-4. Optionally click the edit icon on the card to set your character's name and save.
+4. Optionally click the character's name on the card to rename it.
 5. Click the **ATTACH** button on the card to switch your active desktop mascot to your original creation!
 
 > 📦 **Want to bundle a character name, role, and status quote for distribution?**  
@@ -101,4 +101,4 @@ To assist with frame alignment, grid positioning, and in-app testing for your cu
   A sample character sprite sheet for layout reference and motion testing within TokoToko.  
   *Note: This sample asset is provided strictly for alignment reference and personal testing within the app. Standalone redistribution or unauthorized commercial reproduction of this image is prohibited.*
 
-Create your own unique companion and let them stroll across your desktop🐾
+Create your own unique companion and let them stroll across your desktop! 🐾
