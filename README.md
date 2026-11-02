@@ -13,6 +13,12 @@ An ultra-lightweight, autonomous desktop mascot that keeps you company and syncs
 
 ---
 
+## 📸 UI & Features Preview
+
+![TokoToko UI & Features Preview](assets/screenshots.png)
+
+---
+
 ## 🌿 What is TokoToko?
 
 > *"Did you know there's a little garden hidden between the pixels as you write code?*  
