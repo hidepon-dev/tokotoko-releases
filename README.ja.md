@@ -8,7 +8,7 @@
 [English](README.md) | **日本語**
 
 <a href="https://x.com/hidepon_dev" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/X-@hidepon__dev-1DA1F2?logo=x&logoColor=white" alt="X (@hidepon_dev)" />
+  <img src="https://img.shields.io/badge/-@hidepon__dev-1DA1F2?logo=x&logoColor=white" alt="X (@hidepon_dev)" />
 </a>
 
 ![TokoToko](assets/TokoToko_Bit_Garden_Edition_1920x1072.png)

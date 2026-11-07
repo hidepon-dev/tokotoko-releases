@@ -8,7 +8,7 @@ An ultra-lightweight, autonomous desktop mascot that keeps you company and syncs
 **English** | [日本語 (Japanese)](README.ja.md)
 
 <a href="https://x.com/hidepon_dev" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/X-@hidepon__dev-1DA1F2?logo=x&logoColor=white" alt="X (@hidepon_dev)" />
+  <img src="https://img.shields.io/badge/-@hidepon__dev-1DA1F2?logo=x&logoColor=white" alt="X (@hidepon_dev)" />
 </a>
 
 ![TokoToko](assets/TokoToko_Bit_Garden_Edition_1920x1072.png)
