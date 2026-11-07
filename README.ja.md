@@ -7,6 +7,10 @@
 
 [English](README.md) | **日本語**
 
+<a href="https://x.com/hidepon_dev" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/X-@hidepon__dev-1DA1F2?logo=x&logoColor=white" alt="X (@hidepon_dev)" />
+</a>
+
 ![TokoToko](assets/TokoToko_Bit_Garden_Edition_1920x1072.png)
 
 </div>
@@ -138,6 +142,7 @@ TokoToko はローカルソケット（macOS: Unix Domain Socket / Windows: Name
 ---
 
 <div align="center">
-  <sub>Designed & Developed with ❤️ by hidepon & Alice</sub><br>
+  <sub>Designed & Developed with ❤️ by <a href="https://x.com/hidepon_dev" target="_blank" rel="noopener noreferrer">hidepon</a> & Alice</sub><br>
+  <sub>最新情報・開発進捗は X (<strong><a href="https://x.com/hidepon_dev" target="_blank" rel="noopener noreferrer">@hidepon_dev</a></strong>) にて発信中 🐾</sub><br>
   <sub>Copyright © 2026 TokoToko Project 🐾. All rights reserved.</sub>
 </div>

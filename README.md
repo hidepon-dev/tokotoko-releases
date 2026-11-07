@@ -7,6 +7,10 @@ An ultra-lightweight, autonomous desktop mascot that keeps you company and syncs
 
 **English** | [日本語 (Japanese)](README.ja.md)
 
+<a href="https://x.com/hidepon_dev" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/X-@hidepon__dev-1DA1F2?logo=x&logoColor=white" alt="X (@hidepon_dev)" />
+</a>
+
 ![TokoToko](assets/TokoToko_Bit_Garden_Edition_1920x1072.png)
 
 </div>
@@ -138,6 +142,7 @@ For detailed licensing conditions, credits, restrictions, and privacy policies, 
 ---
 
 <div align="center">
-  <sub>Designed & Developed with ❤️ by hidepon & Alice</sub><br>
+  <sub>Designed & Developed with ❤️ by <a href="https://x.com/hidepon_dev" target="_blank" rel="noopener noreferrer">hidepon</a> & Alice</sub><br>
+  <sub>Follow <strong><a href="https://x.com/hidepon_dev" target="_blank" rel="noopener noreferrer">@hidepon_dev</a></strong> on X for the latest updates & dev logs 🐾</sub><br>
   <sub>Copyright © 2026 TokoToko Project 🐾. All rights reserved.</sub>
 </div>
