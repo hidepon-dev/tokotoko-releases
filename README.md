@@ -7,9 +7,23 @@ An ultra-lightweight, autonomous desktop mascot that keeps you company and syncs
 
 **English** | [日本語 (Japanese)](README.ja.md)
 
-<a href="https://x.com/hidepon_dev" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/-@hidepon__dev-1DA1F2?logo=x&logoColor=white" alt="X (@hidepon_dev)" />
-</a>
+<!-- X Link -->
+<p align="center">
+  <a href="https://x.com/hidepon_dev" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/%20-@hidepon__dev-1DA1F2?style=for-the-badge&logo=x&logoColor=white&labelColor=000000" alt="X (@hidepon_dev)"/>
+  </a>
+</p>
+
+<!-- Store Badges -->
+<p align="center">
+  <a href="https://apps.microsoft.com/detail/9pdgm8gc5nlf?referrer=appbadge&mode=full" target="_blank" rel="noopener noreferrer">
+    <img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Download from Microsoft Store" height="42"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://chromewebstore.google.com/detail/ccchboekidhhodepmlkdddhpmekbhlhc?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">
+    <img src="./assets/chrome-web-store-badge.svg" alt="Available in the Chrome Web Store" height="42"/>
+  </a>
+</p>
 
 ![TokoToko](assets/TokoToko_Bit_Garden_Edition_1920x1072.png)
 
