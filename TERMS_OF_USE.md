@@ -13,7 +13,7 @@ These Terms of Use (hereinafter referred to as the "Agreement") govern the condi
 2. Standard execution and use of the Software on commercial, company-issued, or enterprise internal workstations are fully permitted free of charge, whether by an individual or a corporate entity.
 
 ### Article 2 (Copyright and Intellectual Property Rights)
-All intellectual property rights, copyrights, and titles in and to the Software, including bundled graphics, animation data (such as the official character "Toko"), and associated documentation, remain the exclusive property of the Licensor or legitimate right holders.
+All intellectual property rights, copyrights, and titles in and to the Software, including bundled graphics, animation data (such as the official character "Toko"), and associated documentation, remain the exclusive property of the Licensor or legitimate rights holders.
 
 ### Article 3 (Prohibited Conduct)
 The Licensee shall not engage in any of the following activities:
@@ -36,7 +36,7 @@ The Licensor reserves the right to modify this Agreement at its sole discretion.
 ### Article 7 (Credits & Artwork Licenses)
 1. **Original Characters & Artwork:**  
    Character designs and sprite assets bundled with or officially distributed for the Software are original designs created and refined by the TokoToko Project (utilizing Google Gemini image generation tools and custom adjustments). Unauthorized standalone redistribution, resale, or repurposing of these graphic assets in other works is prohibited.
-2. **Third-Party Guest Characters (Zundamon):**  
+2. **Third-Party Derivative Characters (Zundamon):**  
    Promotional free character packages featuring "Zundamon" are derivative works created in accordance with the Character Usage Guidelines of the Tohoku Zunko / Zundamon Project (SSS LLC). Rights to the character "Zundamon" belong to SSS LLC.
 
 ---
@@ -73,7 +73,7 @@ The Licensor reserves the right to modify this Agreement at its sole discretion.
 ### 第7条（クレジットおよびアセットライセンス）
 1. **オリジナルキャラクター & アートワーク:**  
    本ソフトウェアに同梱または公式配布されるオリジナルキャラクターデザインおよびスプライトシート等のグラフィックアセットは、TokoToko Project により制作（Google Gemini の画像生成機能の活用および加筆・調整を含む）されたオリジナルデザインです。アセット単体の無断再配布、転売、および他作品への流用はご遠慮ください。
-2. **ゲスト・コラボキャラクター（ずんだもん）:**  
+2. **二次創作キャラクター（ずんだもん）:**  
    プロモーションとして無償配布される「ずんだもん」キャラクターデータは、「東北ずん子・ずんだもんプロジェクト」（合同会社SSS）のキャラクター利用ガイドラインに準拠して制作された二次創作物です。「ずんだもん」のキャラクター著作権は合同会社SSSに帰属します。
 
 ---
