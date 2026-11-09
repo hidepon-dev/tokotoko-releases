@@ -23,6 +23,10 @@ An ultra-lightweight, autonomous desktop mascot that keeps you company and syncs
   <a href="https://chromewebstore.google.com/detail/ccchboekidhhodepmlkdddhpmekbhlhc?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">
     <img src="./assets/chrome-web-store-badge.svg" alt="Available in the Chrome Web Store" height="42"/>
   </a>
+  &nbsp;&nbsp;
+  <a href="https://hidepon-dev.booth.pm/" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/BOOTH-CHARACTERS-000000?style=for-the-badge&labelColor=fc4d50" alt="Available in the BOOTH" height="52"/>
+  </a>
 </p>
 
 ![TokoToko](assets/TokoToko_Bit_Garden_Edition_1920x1072.png)
