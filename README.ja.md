@@ -20,7 +20,7 @@
     <img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Download from Microsoft Store" height="42"/>
   </a>
   &nbsp;&nbsp;
-  <a href="https://chromewebstore.google.com/detail/ccchboekidhhodepmlkdddhpmekbhlhc?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">
+  <a href="https://chromewebstore.google.com/search/hidepon" target="_blank" rel="noopener noreferrer">
     <img src="./assets/chrome-web-store-badge.svg" alt="Available in the Chrome Web Store" height="42"/>
   </a>
   &nbsp;&nbsp;
@@ -66,8 +66,8 @@
   ビルトインの「Toko」に加え、最大4体の自作キャラクターや追加キャラクター（`.png` / `.webp` / `.toko` / `.zip` / `.tokochar`）を登録可能。一緒に過ごした時間に応じてキズナランクが成長します。
 * 🌿 **Bit Garden (🔒 近日公開予定)**  
   キャラクターたちが暮らす電脳庭園を覗く専用ウィンドウ。今後のアップデートで順次公開予定です（※入場用 Bit Garden Passport は BOOTH 等の外部ショップにて提供予定）。
-* 🧩 **外部ツール・AI連携**  
-  Google Chrome 拡張機能（[TokoToko Gemini Integration](https://chromewebstore.google.com/detail/ccchboekidhhodepmlkdddhpmekbhlhc)）とのリアルタイム連動や、ローカルソケット（Unix Domain Socket / Windows Named Pipe）経由でのワンライナー連携に対応しています。
+* 🧩 **外部ツール・AI・メール連携**  
+  Google Chrome 公式拡張機能（[TokoToko Gemini Integration](https://chromewebstore.google.com/detail/ccchboekidhhodepmlkdddhpmekbhlhc?utm_source=item-share-cb) / [TokoToko Gmail Connector](https://chromewebstore.google.com/detail/agkeimpdkkloiecocekohddbjngfedaf?utm_source=item-share-cb)）とのリアルタイム連動や、ローカルソケット（Unix Domain Socket / Windows Named Pipe）経由でのワンライナー連携に対応しています。
 
 ---
 

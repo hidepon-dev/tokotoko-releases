@@ -115,12 +115,14 @@ function Prompt {
 
 ## 4. Chrome 拡張機能連携のセットアップ
 
-Google Chrome 上の AI アシスタント（Google Gemini）の思考状態や進捗に合わせてマスコットを連動させるには、以下の手順で初期設定を行ってください。
+Google Chrome 上の AI アシスタント（Google Gemini）の思考状態や、Gmail の新着メール受信に合わせてマスコットを連動させるには、以下の手順で初期設定を行ってください。
 
 1. TokoToko の設定画面（`⚙️ System Core...`）を開き、**「Extensions」** タブを選択します。
 2. **「Chrome Native Messaging Host」** 欄にある **「Install」** ボタンをクリックします（ステータスバッジが `INSTALLED` に変わります）。
-3. **「Allowed Chrome Extensions」** リストに **TokoToko Gemini Integration** が登録されていることを確認します（自作やテスト版拡張機能を利用する場合は **「Add Extension」** ボタンから 32 文字の Extension ID を追加登録してください）。
-4. [Chrome Web Store (TokoToko Gemini Integration)](https://chromewebstore.google.com/detail/ccchboekidhhodepmlkdddhpmekbhlhc) から拡張機能をインストールして Gemini ページを開くと、入力中・思考中・回答完了に合わせてマスコットがリアクションします。
+3. **「Allowed Chrome Extensions」** リストに公式拡張機能（**TokoToko Gemini Integration** および **TokoToko Gmail Connector**）が登録されていることを確認します（自作やテスト版拡張機能を利用する場合は **「Add Extension」** ボタンから 32 文字の Extension ID を追加登録してください）。
+4. Chrome Web Store から公式拡張機能をインストールします：
+   - **[TokoToko Gemini Integration](https://chromewebstore.google.com/detail/ccchboekidhhodepmlkdddhpmekbhlhc?utm_source=item-share-cb)**: Gemini ページを開くと、入力中・思考中・回答完了・放置状態に合わせてマスコットがリアクションします。
+   - **[TokoToko Gmail Connector](https://chromewebstore.google.com/detail/agkeimpdkkloiecocekohddbjngfedaf?utm_source=item-share-cb)**: Gmail にログインしている間、新着未読メールの到着を検知してマスコットがジャンプしてお知らせします。
 
 ---
 

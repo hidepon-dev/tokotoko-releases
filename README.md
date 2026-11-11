@@ -20,7 +20,7 @@ An ultra-lightweight, autonomous desktop mascot that keeps you company and syncs
     <img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Download from Microsoft Store" height="42"/>
   </a>
   &nbsp;&nbsp;
-  <a href="https://chromewebstore.google.com/detail/ccchboekidhhodepmlkdddhpmekbhlhc?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">
+  <a href="https://chromewebstore.google.com/search/hidepon" target="_blank" rel="noopener noreferrer">
     <img src="./assets/chrome-web-store-badge.svg" alt="Available in the Chrome Web Store" height="42"/>
   </a>
   &nbsp;&nbsp;
@@ -66,7 +66,7 @@ Designed with a **"non-intrusive, silent companion"** philosophy, TokoToko produ
 * 🌿 **Bit Garden (🔒 Coming Soon)**  
   A dedicated window overlooking the cybernetic garden where residents live and wander together. Scheduled for upcoming updates (Admission via Bit Garden Passport will be available on external platforms like BOOTH).
 * 🧩 **Smart Integrations & IPC**  
-  Seamlessly integrates with Google Chrome extensions ([TokoToko Gemini Integration](https://chromewebstore.google.com/detail/ccchboekidhhodepmlkdddhpmekbhlhc)) and supports one-liner triggers via local inter-process communication (Unix Domain Sockets on macOS / Named Pipes on Windows).
+  Seamlessly integrates with official Google Chrome extensions ([TokoToko Gemini Integration](https://chromewebstore.google.com/detail/ccchboekidhhodepmlkdddhpmekbhlhc?utm_source=item-share-cb) / [TokoToko Gmail Connector](https://chromewebstore.google.com/detail/agkeimpdkkloiecocekohddbjngfedaf?utm_source=item-share-cb)) and supports one-liner triggers via local inter-process communication (Unix Domain Sockets on macOS / Named Pipes on Windows).
 
 ---
 
